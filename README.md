@@ -46,6 +46,6 @@ The tests run offline using a small hashing embedder, so they do not download an
    ```toml
    LLM_API_KEY = "your-key"
    LLM_BASE_URL = "https://api.groq.com/openai/v1"
-   LLM_MODEL = "llama-3.3-70b-versatile"
+   LLM_MODEL = "openai/gpt-oss-20b"
    ```
 4. Deploy, then paste the URL at the top of this README.
