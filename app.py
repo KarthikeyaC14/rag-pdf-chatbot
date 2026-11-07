@@ -19,11 +19,7 @@ TOP_K = 4
 
 
 def load_dotenv_file() -> None:
-    """Minimal .env reader so a local .env also works (no extra dependency).
-
-    Looks next to app.py and in the current working directory. Values from the
-    file replace empty or missing environment variables.
-    """
+    """Minimal .env reader so a local .env also works (no extra dependency)"""
     for folder in {Path(__file__).resolve().parent, Path.cwd()}:
         path = folder / ".env"
         if not path.is_file():
