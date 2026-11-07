@@ -49,9 +49,3 @@ The tests run offline using a small hashing embedder, so they do not download an
    LLM_MODEL = "llama-3.3-70b-versatile"
    ```
 4. Deploy, then paste the URL at the top of this README.
-
-## Limitations
-
-- Scanned (image-only) PDFs have no extractable text. Adding OCR (e.g. `pytesseract`) is a natural next step.
-- The index lives in memory per session, so it resets when the app restarts.
-- Fixed-size chunking can split a table or list. Layout-aware chunking would help.
