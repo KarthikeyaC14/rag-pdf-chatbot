@@ -48,26 +48,10 @@ The tests run offline using a small hashing embedder, so they do not download an
    LLM_BASE_URL = "https://api.groq.com/openai/v1"
    LLM_MODEL = "llama-3.3-70b-versatile"
    ```
-4. Deploy, then paste the URL at the top of this README and on your resume.
-
-If you would rather not spend your own key on a public demo, leave the secret out and viewers paste their own key in the sidebar.
+4. Deploy, then paste the URL at the top of this README.
 
 ## Limitations
 
 - Scanned (image-only) PDFs have no extractable text. Adding OCR (e.g. `pytesseract`) is a natural next step.
 - The index lives in memory per session, so it resets when the app restarts.
 - Fixed-size chunking can split a table or list. Layout-aware chunking would help.
-
-## Ideas to extend (good interview talking points)
-
-- Swap fixed chunks for semantic or heading-aware chunking and compare answer quality.
-- Add a reranker (cross-encoder) after retrieval.
-- Add a small evaluation set of question/answer pairs and measure retrieval hit rate.
-- Persist the index with a Chroma `PersistentClient`.
-
-## Resume bullets (edit to match what you actually built)
-
-**Document Q&A Chatbot (RAG)** | Python, Streamlit, ChromaDB, LLM API, pypdf
-- Built a retrieval-augmented chatbot that answers questions over uploaded PDFs, with streamed responses and page-level source citations.
-- Implemented page-aware chunking with overlap, vector search in ChromaDB, and a grounded prompt that refuses to answer outside the retrieved context.
-- Added unit tests for chunking and retrieval and deployed the app on Streamlit Community Cloud.
