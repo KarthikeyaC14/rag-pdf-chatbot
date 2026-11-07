@@ -2,7 +2,7 @@
 
 Upload PDFs, ask questions, get streamed answers that cite the exact document and page they came from.
 
-**Live demo:** _add your Streamlit Cloud link here_
+**Live demo:** https://ragpdfchatbot-14.streamlit.app/
 
 ## How it works
 
